@@ -117,6 +117,7 @@ class DatabaseWrapper:
     def updateclient(self, username, password, socialsecuritynumber, name, email, age,
                      state, smoker, gender, bodymassindex, profession, maritalstatus,
                      previouslyuninsured, preconditions, familyhistory):
+
         self.conn.execute("""UPDATE CLIENTS SET USERNAME = ?, PASSWORD = ?,
         NAME = ?, EMAIL = ?, AGE = ?, STATE = ?, SMOKER = ?, GENDER = ?, BODYMASSINDEX = ?,
         PROFESSION = ?, MARITALSTATUS = ?, PREVIOUSLYUNINSURED = ?, PRECONDITIONS = ?,
@@ -124,6 +125,11 @@ class DatabaseWrapper:
         """, [username, password, name, email, age, state, smoker, gender, bodymassindex,
               profession, maritalstatus, previouslyuninsured, preconditions, familyhistory,
               socialsecuritynumber])
+
+    def updatepassword(self, socialsecuritynumber, password):
+        #updates cleints password with passed in hash
+        self.conn.execute("""UPDATE CLIENTS SET PASSWORD = ? WHERE SOCIALSECURITYNUMBER = ?
+        """, [password, socialsecuritynumber])
 
     def updateclaim(self, owner, date, condition, amount):
         self.conn.execute("""UPDATE CLAIMS SET DATE = ?, CONDITION = ?, AMOUNT =?
