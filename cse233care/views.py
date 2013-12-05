@@ -4,6 +4,7 @@ def main_view(request):
     return HttpResponse("""
     <!DOCTYPE html>
     <html>
+    <link rel="stylesheet" type="text/css" href="/media/layout.css" />
     <head>
         <title>
             Welcome to CSE233Care!
