@@ -193,7 +193,7 @@ def register(request):
                 <input type="checkbox" value="other">Other: <input type="text" name="other"><br>
                 <br>
 
-                <b><u>Past Medical Illnesses:</u></b><br>
+                <b><u>Previous Surgeries:</u></b><br>
                 <input type="checkbox" value="none_surgery">None<br>
                 <input type="checkbox" value="aicd">AICD - Automatic Implantbale Cardiac Difibrillator<br>
                 <input type="checkbox" value="appendix">Appendix<br>
