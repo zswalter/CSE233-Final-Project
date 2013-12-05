@@ -131,6 +131,46 @@ class DatabaseWrapper:
         self.conn.execute("""UPDATE CLIENTS SET PASSWORD = ? WHERE SOCIALSECURITYNUMBER = ?
         """, [password, socialsecuritynumber])
 
+    def updateusername(self, socialsecuritynumber, username):
+        #updates clients social security number
+        self.conn.execute("""UPDATE CLIENTS SET USERNAME = ? WHERE SOCIALSECURITYNUMBER = ?
+        """, [username, socialsecuritynumber])
+
+    def updatename(self, socialsecuritynumber, name):
+        #updates clients name
+        self.conn.execute("""UPDATE CLIENTS SET NAME = ? WHERE SOCIALSECURITYNUMBER = ?
+        """, [name, socialsecuritynumber])
+
+    def updateemail(self, socialsecuritynumber, email):
+        #updates clients email address
+        self.conn.execute("""UPDATE CLIENTS SET EMAIL = ? WHERE SOCIALSECURITYNUMBER = ?
+        """, [email, socialsecuritynumber])
+
+    def updateage(self, socialsecuritynumber, age):
+        #updates clients age
+        self.conn.execute("""UPDATE CLEINTS SET AGE = ? WHERE SOCIALSECURITYNUMBER = ?
+        """, [age, socialsecuritynumber])
+
+    def updatestate(self, socialsecuritynumber, state):
+        #updates clients state
+        self.conn.execute("""UPDATE CLIENTS SET STATE = ? WHERE SOCIALSECURITYNUMBER = ?
+        """, [state, socialsecuritynumber])
+
+    def updatesmoker(self, socialsecuritynumber, smoker):
+        #updates clients smoking status
+        self.conn.execute("""UPDATE CLIENTS SET SMOKER = ? WHERE socialsecuritynumber = ?
+        """, [smoker, socialsecuritynumber])
+
+    def updatebodymassindex(self, socialsecuritynumber, bodymassindex):
+        #updates clients body mass index
+        self.conn.execute("""UPDATE CLIENTS SET BODYMASSINDEX = ? WHERE socialsecuritynumber = ?
+        """, [bodymassindex, socialsecuritynumber])
+
+    def updateprofession(self, socialsecuritynumber, profession):
+        #updates clients profession
+        self.conn.execute("""UPDATE CLIENTS SET PROFESSION = ? WHERE socialsecuritynumber = ?
+        """, [profession, socialsecuritynumber])
+
     def updateclaim(self, owner, date, condition, amount):
         self.conn.execute("""UPDATE CLAIMS SET DATE = ?, CONDITION = ?, AMOUNT =?
         WHERE OWNER = ?""", [date, condition, amount, owner])
