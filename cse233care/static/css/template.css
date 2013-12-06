@@ -36,3 +36,17 @@ a{
 #login ul li{
 	display: inline;
 }
+#content{
+	background-color: white;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	box-shadow: 0px 0px 30px #888888;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-top: -25px;
+	height: 800px;
+}
