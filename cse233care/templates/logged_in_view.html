@@ -5,12 +5,37 @@
         Hello, Again!
     </title>
 </head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/template.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
 <body>
-    <h1>Welcome back!</h1>
-    <p>
-        This will be where we have a list of all of the users info.
-        It will contain their 'policy', their 'payment info' and things
-        of that nature.
-    </p>
+    <div id="login">
+        <ul>
+            <li><a href="{% url 'logged_in' %}">Log In<a></li>
+            <li> | </li>
+            <li><a href="{% url 'register' %}">Register<a></li>
+        </ul>
+    </div>
+    <div id="menu">
+        <ul>
+            <li>Home</li>
+            <li> | </li>
+            <li>News</li>
+            <li> | </li>
+            <li>Claims</li>
+            <li> | </li>
+            <li>Contact</li>
+            <li> | </li>
+            <li>Rates</li>
+        </ul>
+    </div>
+    <div id="content">
+	    <h1>Welcome back!</h1>
+	    <p>
+	        This will be where we have a list of all of the users info.
+	        It will contain their 'policy', their 'payment info' and things
+	        of that nature.
+	    </p>
+	</div>
 </body>
 </html>
