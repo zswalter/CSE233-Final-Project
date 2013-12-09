@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Register
+	</title>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/template.css' %}">
+<body>
+    <div id="login">
+        <ul>
+            <li><a href="{% url 'logged_in' %}">Log In</a></li>
+            <li> | </li>
+            <li><a href="{% url 'register1' %}">Register</a></li>
+        </ul>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="{% url 'index'%}">Home</a></li>
+            <li> | </li>
+            <li>News</li>
+            <li> | </li>
+            <li>Claims</li>
+            <li> | </li>
+            <li>Contact</li>
+            <li> | </li>
+            <li>Rates</li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>Please fill out the following information</h1>
+        <p>
+            Here we will have a form that will include all of the information
+            that we will need to store in the database.
+        </p>
+
+        <form>
+            Desired username: <input type="text" name="username"><br>
+            Desired password: <input type="password" name="username"><br>
+            Confirm password: <input type="password" name="username"><br>
+            First name: <input type="text" name="firstname"><br>
+            Last name: <input type="text" name="lastname"><br>
+            Email: <input type="text" name="email"><br>
+            Social Security Number: <input type="tel" name="ssn-first">
+            <input type="tel" name="ssn-middle">
+            <input type="tel" name="ssn-last"><br>
+            Age: <input type="number" name="age"><br>
+            State: <input type="text" name="state"><br>
+            Smoker: 
+            <select name="smoker">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+            <option value="quit">I did, but I quit</option>
+            </select></br>
+            Gender: 
+            <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            </select></br>
+            Body Mass Index: <input type="tel" name="bmi"><br>
+            Marital Status: 
+            <select name="marital">
+            <option value="married">Married</option>
+            <option value="single">Single</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+            </select></br>
+            Were you previously insured? 
+            <select name="prev_insured">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            </select></br>
+            List any pre-existing conditions you have:
+            <textarea rows="4" cols="50">
+            </textarea>
+            <br>
+            <br>
+                <b>Please select all that apply to you:</b><br>
+                <br>
+                <b><u>Allergies:</u></b><br>
+                <input type="checkbox" value="none">None<br>
+                <input type="checkbox" value="aspirin">Aspirin<br>
+                <input type="checkbox" value="codeine">Codeine<br>
+                <input type="checkbox" value="dermerol">Dermerol<br>
+                <input type="checkbox" value="eggs">Eggs<br>
+                <input type="checkbox" value="environmental">Environmental<br>
+                <input type="checkbox" value="iodine">Iodine<br>
+                <input type="checkbox" value="latex">Latex<br>
+                <input type="checkbox" value="morphine">Morphine<br>
+                <input type="checkbox" value="penicillin">Penicillin<br>
+                <input type="checkbox" value="sulfa">Sulfa<br>
+                <input type="checkbox" value="other">Other: <input type="text" name="other">
+        </form>
+    </div>
+</body>
+</html>

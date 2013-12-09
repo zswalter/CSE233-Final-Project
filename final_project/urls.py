@@ -8,5 +8,7 @@ from cse233care import views
 urlpatterns = patterns('',
     url('^$', views.main_view, name='index'),
     url('^logged_in$', views.logged_in_view, name='logged_in'),
-    url('^register$', views.register, name='register'),
+    url('^register1$', views.register1, name='register1'),
+    url('^register2$', views.register2, name='register2'),
+    url('^register3$', views.register3, name='register3'),
 )
