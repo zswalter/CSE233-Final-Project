@@ -7,6 +7,7 @@
 </head>
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/template.css' %}">
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
 <body>
     <div id="login">
         <ul>
@@ -33,8 +34,9 @@
         <b>Please log in to continue!</b><br>
 	    <form>
             Username: <input type="text" name="username"><br>
-            Password: <input type="password" name="username"><br>
+            Password: <input type="password" name="password"><br>
         </form>
+        <a class="next" href="{% url 'logged_in' %}">Submit</a>
 	</div>
 </body>
 </html>
