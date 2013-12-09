@@ -14,4 +14,5 @@ urlpatterns = patterns('',
     url('^register3$', views.register3, name='register3'),
     url('^claims$', views.claims, name='claims'),
     url('^contact$', views.contact, name='contact'),
+    url('^rates$', views.rates, name='rates'),
 )

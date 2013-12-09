@@ -24,6 +24,11 @@ def claims(request):
 		return redirect('log_in')
 	else:
 		return render_to_response('claims.html', locals())
+def rates(request):
+	if not request.user.is_authenticated():
+		return redirect('log_in')
+	else:
+		return render_to_response('rates.html', locals())
 
 def contact(request):
     return render_to_response('contact.html', locals())
