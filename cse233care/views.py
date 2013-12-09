@@ -1,4 +1,5 @@
 from django.shortcuts import render_to_response
+from django.shortcuts import redirect
 
 def main_view(request):
     return render_to_response('main_view.html', locals())
@@ -19,7 +20,10 @@ def register3(request):
     return render_to_response('register3.html', locals())
 
 def claims(request):
-    return render_to_response('claims.html', locals())
+	if not request.user.is_authenticated():
+		return redirect('log_in')
+	else:
+		return render_to_response('claims.html', locals())
 
 def contact(request):
     return render_to_response('contact.html', locals())
