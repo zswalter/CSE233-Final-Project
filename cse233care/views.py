@@ -17,3 +17,6 @@ def register2(request):
 
 def register3(request):
     return render_to_response('register3.html', locals())
+
+def claims(request):
+    return render_to_response('claims.html', locals())

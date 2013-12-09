@@ -12,4 +12,5 @@ urlpatterns = patterns('',
     url('^register1$', views.register1, name='register1'),
     url('^register2$', views.register2, name='register2'),
     url('^register3$', views.register3, name='register3'),
+    url('^claims$', views.claims, name='claims'),
 )
