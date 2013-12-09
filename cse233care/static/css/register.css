@@ -38,7 +38,8 @@
 	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
 	background-color:#378de5;
-}.next:active {
+}
+.next:active {
 	position:relative;
 	top:1px;
 }
@@ -82,7 +83,8 @@
 	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
 	background-color:#378de5;
-}.next:active {
+}
+.next:active {
 	position:relative;
 	top:1px;
 }

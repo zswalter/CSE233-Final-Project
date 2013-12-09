@@ -40,55 +40,73 @@
             Desired username: <input type="text" name="username"><br>
             Desired password: <input type="password" name="username"><br>
             Confirm password: <input type="password" name="username"><br>
-            First name: <input type="text" name="firstname"><br>
-            Last name: <input type="text" name="lastname"><br>
-            Email: <input type="text" name="email"><br>
+            <table>
+                <tr>
+                    <td>First name: <input type="text" name="firstname"></td>
+                    <td>Last name: <input type="text" name="lastname"></td>
+                    <td>Email: <input type="text" name="email"></td>
+                </tr>
+            </table>
             Social Security Number: <input type="tel" name="ssn-first">
             <input type="tel" name="ssn-middle">
             <input type="tel" name="ssn-last"><br>
-            Age: <input type="number" name="age"><br>
-            State: <input type="text" name="state"><br>
-            Smoker: 
-            <select name="smoker">
-            <option value="no">No</option>
-            <option value="yes">Yes</option>
-            <option value="quit">I did, but I quit</option>
-            </select></br>
-            Gender: 
-            <select name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            </select></br>
-            Body Mass Index: <input type="tel" name="bmi"><br>
-            Marital Status: 
-            <select name="marital">
-            <option value="married">Married</option>
-            <option value="single">Single</option>
-            <option value="divorced">Divorced</option>
-            <option value="widowed">Widowed</option>
-            </select></br>
-            Were you previously insured? 
-            <select name="prev_insured">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            </select></br>
+            <table>
+                <tr>
+                    <td>Age: <input type="number" name="age"></td>
+                    <td>State: <input type="text" name="state"></td>
+                    <td>Gender: 
+                    <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    </select></td>
+                   <td> Marital Status: 
+                    <select name="marital">
+                    <option value="married">Married</option>
+                    <option value="single">Single</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widowed">Widowed</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Body Mass Index: <input type="tel" name="bmi"></td>
+                    <td>Smoker: 
+                    <select name="smoker">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                    <option value="quit">I did, but I quit</option>
+                    </select></td>
+                    <td>Were you previously insured? 
+                    <select name="prev_insured">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    </select></td>
+                </tr>
+            </table>
             <br>
             <br>
-                <b>Please select all that apply to you:</b><br>
-                <br>
-                <b><u>Allergies:</u></b><br>
-                <input type="checkbox" value="none">None<br>
-                <input type="checkbox" value="aspirin">Aspirin<br>
-                <input type="checkbox" value="codeine">Codeine<br>
-                <input type="checkbox" value="dermerol">Dermerol<br>
-                <input type="checkbox" value="eggs">Eggs<br>
-                <input type="checkbox" value="environmental">Environmental<br>
-                <input type="checkbox" value="iodine">Iodine<br>
-                <input type="checkbox" value="latex">Latex<br>
-                <input type="checkbox" value="morphine">Morphine<br>
-                <input type="checkbox" value="penicillin">Penicillin<br>
-                <input type="checkbox" value="sulfa">Sulfa<br>
-                <input type="checkbox" value="other">Other: <input type="text" name="other">
+            <b>Please select all that apply to you:</b><br>
+            <br>
+            <b><u>Allergies:</u></b><br>
+            <table>
+                <tr>
+                    <td><input type="checkbox" value="none">None</td>
+                    <td><input type="checkbox" value="aspirin">Aspirin</td>
+                    <td><input type="checkbox" value="codeine">Codeine</td>
+                    <td><input type="checkbox" value="dermerol">Dermerol</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="eggs">Eggs</td>
+                    <td><input type="checkbox" value="environmental">Environmental</td>
+                    <td><input type="checkbox" value="iodine">Iodine</td>
+                    <td><input type="checkbox" value="latex">Latex</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="morphine">Morphine</td>
+                    <td><input type="checkbox" value="penicillin">Penicillin</td>
+                    <td><input type="checkbox" value="sulfa">Sulfa</td>
+                    <td><input type="checkbox" value="other">Other: <input type="text" name="other"></td>
+                </tr>
+            </table>
         </form>
         <div id="next">
             <ul>
