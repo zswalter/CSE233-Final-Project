@@ -36,7 +36,11 @@
             Username: <input type="text" name="username"><br>
             Password: <input type="password" name="password"><br>
         </form>
-        <a class="next" href="{% url 'logged_in' %}">Submit</a>
+        <div id="next">
+            <ul>
+                <li class="next"><a href="{% url 'logged_in' %}">Submit</a></li>
+            </ul>
+        </div>
 	</div>
 </body>
 </html>
