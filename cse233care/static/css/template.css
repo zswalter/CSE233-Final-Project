@@ -2,7 +2,7 @@ body{
 	background-color: #F0F0F0;
 }
 #menu{
-	background-color: #99FFFF;
+	background-color: #79bbff;
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
@@ -26,6 +26,7 @@ body{
 a{
 	text-decoration: none;
 }
+a:visited {color: inherit;}
 #login{
 	margin-right: 0px;
 	margin-top: 0px;
