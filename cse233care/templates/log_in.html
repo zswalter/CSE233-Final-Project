@@ -11,7 +11,7 @@
 <body>
     <div id="login">
         <ul>
-            <li><a href="{% url 'logged_in' %}">Log In</a></li>
+            <li><a href="{% url 'log_in' %}">Log In</a></li>
             <li> | </li>
             <li><a href="{% url 'register1' %}">Register</a></li>
         </ul>
@@ -25,6 +25,7 @@
         </ul>
     </div>
     <div id="content">
+        <div id="info">
 	    <h1>Welcome back!</h1>
         <b>Please log in to continue!</b><br>
 	    <form>
@@ -35,6 +36,7 @@
             <ul>
                 <li class="next"><a href="{% url 'logged_in' %}">Submit</a></li>
             </ul>
+        </div>
         </div>
 	</div>
 </body>

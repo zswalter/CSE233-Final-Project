@@ -74,3 +74,15 @@ a:visited {color: inherit;}
 	margin-top: -25px;
 	height: 700px;
 }
+#info p, b, form{
+	margin-left: 60px	
+}
+table#info{
+	margin-left: 60px	
+}
+#info h1{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 50px;
+}
