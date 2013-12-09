@@ -20,3 +20,6 @@ def register3(request):
 
 def claims(request):
     return render_to_response('claims.html', locals())
+
+def contact(request):
+    return render_to_response('contact.html', locals())
