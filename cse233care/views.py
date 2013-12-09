@@ -6,6 +6,9 @@ def main_view(request):
 def logged_in_view(request):
     return render_to_response('logged_in_view.html', locals())
 
+def log_in(request):
+    return render_to_response('log_in.html', locals())  
+
 def register1(request):
     return render_to_response('register1.html', locals())
 

@@ -2,16 +2,15 @@
 <html>
 <head>
     <title>
-        Welcome to CSE233Care!
+        Hello, Again!
     </title>
 </head>
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/template.css' %}">
-<link rel="stylesheet" href="{% static 'css/main.css' %}">
 <body>
     <div id="login">
         <ul>
-            <li><a href="{% url 'log_in' %}">Log In</a></li>
+            <li><a href="{% url 'logged_in' %}">Log In</a></li>
             <li> | </li>
             <li><a href="{% url 'register1' %}">Register</a></li>
         </ul>
@@ -30,8 +29,12 @@
         </ul>
     </div>
     <div id="content">
-        <h1>Here is the main page</h1>
-        <p>Here is where we'll have some bootstrappy things</p>
-    </div>
+	    <h1>Welcome back!</h1>
+        <b>Please log in to continue!</b><br>
+	    <form>
+            Username: <input type="text" name="username"><br>
+            Password: <input type="password" name="username"><br>
+        </form>
+	</div>
 </body>
 </html>
